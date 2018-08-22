@@ -1,0 +1,129 @@
+/* GENERAL STYLE */
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* TEXT STYLE */
+
+h2,h3,p{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    font-size: 15px;
+    font-style: bold;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+h2 {
+    font-size: 22px;
+    font-style: medium;
+    padding-bottom: 4px;
+}
+.subhead{
+    font-size: 14px;
+    font-style: regular;
+}
+.close {
+    display: inline-block;
+    height: 64px;
+    width: calc(100% - 48px);
+    margin: 0 24px;
+    text-align: right;
+    line-height: 64px;
+    color: #FF3147;
+    font-weight: bold;
+    cursor: default;
+}
+.grey{
+    color: rgba(255, 255, 255, 0.75);
+}
+.white {
+    color: white;
+}
+
+/* VIDEO STYLE */
+
+video{
+    position: fixed;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* ALBUM VIEW OVERLAY STYLE */
+
+.albumViewOverlay{
+    position: relative;
+    z-index: 2;
+}
+.albumViewBackgroundBlur{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient( rgba(0,0,0,0.45), rgba(175,44,50,0.25));
+
+    filter:blur(10px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);
+}
+.albumViewContent{
+    position: absolute;
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+.albumViewDetials{
+    padding:0 16px 24px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: rgba(255,255,255,0.5) .5px solid
+}
+.albumViewDetials img{
+    height: 125px;
+    width: 125px;
+    margin-right: 8px;
+}
+.albumViewSongListRow{
+    height: 52px;
+    width: calc(100% - 32px);
+    display: flex;
+    margin: 0 16px;
+    border-bottom: rgba(255,255,255,0.5) .5px solid
+}
+.albumViewSongListRow h3, .albumViewSongListRow p {
+    line-height: 52px;
+}
+.albumViewSongListRow p {
+    margin-left: 24px;
+    flex-grow: 2;
+}
+.AlbumViewListenOn {
+    margin: 24px 20px 16px 20px;
+    width: calc(100% - 40px);
+}
+.AlbumViewListenOn img{
+    width: calc(100% / 3 - 3px);
+    height: 38px;
+}
+.AlbumViewListenOn img:last-child{
+    margin-right: 0;
+}
