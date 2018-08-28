@@ -19,6 +19,20 @@ section {
     top: 0;
     position: absolute;
     z-index: 2;
+    line-height: 80px;
+}
+#navbar a {
+    transform: scale(1);
+    margin: 0;
+    padding: 40px 24px;
+    font-size: 24px;
+    color: rgba(255, 49, 71, 0.5);
+    text-decoration: none;
+}
+#navbar a:hover {
+    transform: scale(1.2);
+    color: rgba(255, 49, 71, 1);
+    transition: all 0.1s ease-in-out;
 }
 
 /* TEXT STYLE */
