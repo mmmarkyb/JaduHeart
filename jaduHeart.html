@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Jadu Heart</title>
+  <meta name="description" content="Jadu Heart website">
+  <meta name="author" content="JaduHeart">
+  <meta name="viewport" content="initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/fullpage.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+  <script src="js/fullpage.js"></script>
+  <style>
+      body{
+          background-color: black;
+      }
+  </style>
+
+</head>
+<body>
+    <video autoplay="true" loop>
+        <source src="img/backgroundVid.mp4" type="video/mp4">
+    </video>
+    <nav id="navbar">
+        <a href="#" title="Music">Music</a>
+        <a href="#" title="Video">Video</a>
+        <a href="#" title="Live">Live</a>
+        <a href="#" title="Mixes">Mixes</a>
+        <a href="#" title="Merchandise">Merchandise</a>
+        <a href="#" title="7dimensions">7 Dimensions</a>
+    </nav>
+    <div id="fullpage">
+        <section class="section" id="Music">Music</section>
+        <section class="section" id="Video">Video</section>
+        <section class="section" id="Live">Live</section>
+        <section class="section" id="Mixes">Mix</section>
+        <section class="section" id="Merchandise">Merch</section>
+        <section class="section" id="7Dimensions">7 dimension</section>
+    </div>
+    <script>
+    new fullpage('#fullpage', {
+        //options here
+        autoScrolling: true,
+        scrollHorizontially: true,
+        loopBottom: true,
+	    loopTop: true,
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+    });
+    </script>
+</body>
+</html>

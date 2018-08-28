@@ -10,8 +10,15 @@ section {
     z-index: 1;
     color: white;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+}
+
+#navbar {
+    width: 100%;
+    height: 80px;
+    top: 0;
+    position: absolute;
+    z-index: 2;
 }
 
 /* TEXT STYLE */
@@ -145,7 +152,7 @@ video{
 .releaseView {
     margin: 0 0 24px 0;
     display: flex;
-    width: 150%;
+    width: 100%;
     overflow-y: scroll;
     flex-wrap: wrap;
     justify-content: space-around;
