@@ -119,24 +119,32 @@ html.fp-enabled,
     left: 0 !important;
     right: 0;
     margin: 0 auto !important;
+    text-align: center;
 }
+/*.fp-slidesNav::after{
+    content: 'Slide for more';
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}*/
 .fp-slidesNav.fp-bottom {
     bottom: 17px;
 }
 .fp-slidesNav.fp-top {
-    top: 17px;
+    top: 64px;
 }
 #fp-nav ul,
 .fp-slidesNav ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 #fp-nav ul li,
 .fp-slidesNav ul li {
     display: block;
     width: 14px;
     height: 13px;
-    margin: 7px;
+    margin: 0px 7px;
     position:relative;
 }
 .fp-slidesNav ul li {
@@ -158,6 +166,7 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a.active span{
     height: 12px;
     width: 12px;
+    background: rgba(255, 49, 71, 1);
     margin: -6px 0 0 -6px;
     border-radius: 100%;
  }
@@ -169,7 +178,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #333;
+    background: #fff;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
