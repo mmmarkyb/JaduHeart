@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Jadu Heart</title>
+    <meta name="description" content="Jadu Heart">
+    <meta name="author" content="Mark Brown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+
+        var exsistingDimensions = ["7", "4"];
+    
+        function showDimension(dimension){
+            console.log(exsistingDimensions.indexOf(dimension));
+            if (exsistingDimensions.indexOf(dimension) != -1){
+                for (i = 0; i < exsistingDimensions.length; i++){
+                    document.getElementById('Dimension'+exsistingDimensions[i]).style.display = "none";
+                }
+                document.getElementById('dimensionContainer').style.display = "block";
+                document.getElementById('Dimension'+dimension).style.display = "flex";
+            }
+        }
+
+        function hideDimension() {
+            for (i = 0; i < exsistingDimensions.length; i++){
+                document.getElementById('Dimension'+exsistingDimensions[i]).style.display = "none";
+            }
+            document.getElementById('dimensionContainer').style.display = "none";
+        }
+
+    </script>
+</head>
+<body style="padding:0 24px; margin:0; overflow: hidden;">
+    <div class="marqueeContainer">
+        <div><img onclick="showDimension('1')" src="img/dimensions/blueAlien.png" alt="Blue Alien" width="130%"></div>
+        <div><img onclick="showDimension('7')" src="img/dimensions/flower.png" alt="Flower" width="100%"></div>
+        <div><img onclick="showDimension('2')" src="img/dimensions/eye.png" alt="eye" width="90%"></div>
+        <div><img onclick="showDimension('6')" src="img/dimensions/redAlien.png" alt="Red Alien" width="130%"></div>
+        <div><img onclick="showDimension('3')" src="img/dimensions/flowerText.png" alt="Flower Text" width="140%"></div>
+        <div><img onclick="showDimension('5')" src="img/dimensions/eyeAlien.png" alt="Eye Alien" width="190%"></div>
+        <div><img onclick="showDimension('4')" src="img/dimensions/dimDream.png" alt="Dins Dream" width="60%"></div>
+    </div>
+    <div class="marqueeContainer">
+        <div><img onclick="showDimension('5')" src="img/dimensions/eyeAlien.png" alt="Eye Alien" width="190%"></div>
+        <div><img onclick="showDimension('2')" src="img/dimensions/eye.png" alt="eye" width="90%"></div>
+        <div><img onclick="showDimension('3')" src="img/dimensions/flowerText.png" alt="Flower Text" width="140%"></div>
+        <div><img onclick="showDimension('4')" src="img/dimensions/dimDream.png" alt="Dinss Dream" width="60%"></div>
+        <div><img onclick="showDimension('1')" src="img/dimensions/blueAlien.png" alt="Blue Alien" width="130%"></div>
+        <div><img onclick="showDimension('6')" src="img/dimensions/redAlien.png" alt="Red Alien" width="130%"></div>
+        <div><img onclick="showDimension('7')" src="img/dimensions/flower.png" alt="Flower" width="100%"></div>
+    </div>
+    <div id="dimensionContainer" style="display:none;">
+        <button onclick="hideDimension()">X</button>
+        <div class="dimensionContent" id="Dimension7" style="display: none;">
+            <img src="img/dimensions/flower.png" alt="Flower">
+            <p>Before the dimensions, there was nothing but a calm breeze. From within the nothing, a flower grew. After time passed its petals bloomed and hidden with was Jadu. Some believe the flower took an seemingly infinite amount of time to bloom, other believe it happened in an instant.</p>
+        </div>
+        <div class="dimensionContent" id="Dimension4" style="display:none;">
+            <img src="img/dimensions/dimDream.png" alt="Dins Dream">
+            <p>Din had a dream one night of a different type of being. He set to work, creating them without consulting the elementals. They were to be the perfect race, although their greed and lust were quickly noticed. He named them 'Children of the Sun' and tried to teach them the perfect way to live. They soon strayed. When Jadu found out about this betrayal, he banished as many Sun Children as he could to the 8th dimension and sealed the entrance so neither dimension could ever have access to the other. After some time, the 8th dimension was forgotten, and so the ancestors of the Sun Children who had managed to escape Jadu's exile lived amongst the other beings in peace on Koshui, unaware of their origin.</p>
+        </div>
+    </div>
+</body>
