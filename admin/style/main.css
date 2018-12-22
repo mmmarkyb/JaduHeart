@@ -1,0 +1,6 @@
+#addDimensionView{
+    display: none;
+}
+.show {
+    display: block !important;
+}
